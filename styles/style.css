@@ -13,13 +13,19 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  position: relative;
+  align-items: center;
+  display: flex;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2F80ED;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +34,168 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo_place-header{
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  height: 32px;
+  width: 183px;
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.header__title{
+  max-width: 730px;
+  margin-left: 64px;
+  font-size: 102px;
+  line-height: 96px;
+}
+
+.header__subtitle{
+  position: absolute;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 388px;
+  bottom: 30px;
+  left: 64px;
+  margin: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2F80ED;
+  cursor: pointer;
+}
+
+.header__main-illustration{
+  background-image: url(../images/header-image.png);
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
+
+.description{
+  margin-top: 100px;
+}
+
+.two-collumns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.two-collumns__brief{
+  width: 175px;
+  line-height: 1.2;
+  color: #2F80ED;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+
+h2 {
+  display: block;
+}
+
+.two-collumns__main-text{
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-collumns__paragraph{
+  line-height: 34px;
+  font-size: 24px;
+  margin: 30px 0px;
+}
+
+.two-collumns__span-accent {
+  font-weight: bold;
+}
+
+/* не работает */
+.two-columns__paragraph:first-of-type {
+  margin-top: 0;
+}
+
+/* не работает */
+.two-columns__paragraph:last-of-type {
+  margin-top: 0;
+}
+
+.digits{
+  margin-top: 100px;
+}
+
+.table {
+  font-size: 24px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  max-width: 1100px;
+}
+
+/*  как сделать width 60%??? */
+.section-title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.15em;
+}
+
+/*  как сделать width 60%??? */
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.table {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  max-width: 1100px;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading{
+  font-size: 24px;
+  line-height: 1.15em;
+  margin: 0px;
+}
+
+.table__text {
+  font-size: 18px;
+  margin: 20px 0 0;
+  line-height: 1.2em;
+}
+
+.feynman{
+  margin-top: 100px;
+  height: 890px;
+  background: #F2F2F2 url(../images/feynman.png) no-repeat bottom left;
+  position: relative;
+}
+/*  нужен отступ сверху 100px */
+.feynman__title{
+  font-size: 120px;
+  line-height: 1.15em;
+  text-align: center;
+  padding: 0 2.4em;
+  margin: 0 auto;
+  font-weight: bold;
 }
