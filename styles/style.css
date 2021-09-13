@@ -16,6 +16,7 @@
   background-color: #f2f2f2;
   position: relative;
   align-items: center;
+  overflow: hidden;
   display: flex;
 }
 
@@ -26,14 +27,6 @@
   position: absolute;
   top: 64px;
   right: 0;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
 
 .logo_place-header{
@@ -69,7 +62,6 @@
 }
 
 .header__main-illustration{
-  background-image: url(../images/header-image.png);
   width: 765px;
   height: 608px;
   position: absolute;
@@ -82,7 +74,7 @@
   margin-top: 100px;
 }
 
-.two-collumns {
+.two-columns {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -90,7 +82,7 @@
   font-size: 24px;
 }
 
-.two-collumns__brief{
+.two-columns__brief {
   width: 175px;
   line-height: 1.2;
   color: #2F80ED;
@@ -103,58 +95,46 @@ h2 {
   display: block;
 }
 
-.two-collumns__main-text{
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
 }
 
-.two-collumns__paragraph{
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
-  margin: 30px 0px;
+  margin: 30px 0px 0px;
 }
 
-.two-collumns__span-accent {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
-/* не работает */
 .two-columns__paragraph:first-of-type {
-  margin-top: 0;
-}
-
-/* не работает */
-.two-columns__paragraph:last-of-type {
   margin-top: 0;
 }
 
 .digits{
   margin-top: 100px;
-}
-
-.table {
-  font-size: 24px;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  max-width: 1100px;
+  justify-content: center;
 }
 
-/*  как сделать width 60%??? */
 .section-title {
-  text-align: center;
   font-size: 60px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 0;
   line-height: 1.15em;
+  width: 60%;
+  text-align: center;
 }
 
-/*  как сделать width 60%??? */
 .section-subtitle {
   line-height: 34px;
   font-size: 24px;
+  margin: 20px 0px 0px;
+  width: 60%;
   text-align: center;
 }
 
@@ -186,16 +166,89 @@ h2 {
 
 .feynman{
   margin-top: 100px;
+  padding-top: 100px;
   height: 890px;
-  background: #F2F2F2 url(../images/feynman.png) no-repeat bottom left;
+  background: #F2F2F2 url(../images/feynman.png) no-repeat bottom left/ 867px 637px;
   position: relative;
 }
-/*  нужен отступ сверху 100px */
+
 .feynman__title{
   font-size: 120px;
   line-height: 1.15em;
   text-align: center;
-  padding: 0 2.4em;
   margin: 0 auto;
   font-weight: bold;
+  width: 648px;
+}
+
+.feynman__subtitle{
+  font-size: 36px;
+  line-height: 51px;
+  text-align: center;
+  margin: 70px 0 0;
+  font-weight: normal;
+}
+
+.feynman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  font-size: 36px;
+  line-height: 51px;
+  text-decoration: none;
+}
+
+.kaufman{
+  background-color: #1f1f1f;
+  padding: 90px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-title_theme_dark{
+  color: white;
+  width: 60%;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.15em;
+  font-weight: normal;
+}
+
+.section-subtitle_theme_dark{
+  color: white;
+  line-height: 34px;
+  font-size: 24px;
+  margin: 20px 0px 0px;
+  width: 60%;
+  text-align: center;
+  font-weight: normal;
+}
+
+.table_theme_dark{
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+/* некорректный отступ снизу */
+/* необходимо добавить атрибут альт */
+.kaufman__triangle{
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  z-index: 0;
+  top: 0;
+  right: -210px;
 }
