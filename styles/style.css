@@ -34,13 +34,14 @@
 .logo{
   height: 32px;
   width: 183px;
-  background-image: url(../images/logo_place_header.svg);
+  z-index: 2;
 }
 
-.logo_place-header{
+.logo_place_header{
   position: absolute;
   top: 30px;
   left: 64px;
+  background-image: url(../images/logo_place_header.svg);
 }
 
 .header__title{
@@ -284,7 +285,7 @@
   line-height: 25px;
 }
 
-.logo_place-footer{
+.logo_place_footer{
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
 }
@@ -305,14 +306,11 @@
   list-style: none;
 }
 
-.footer__column-links :visited{
-  color: white;
-}
-
 .footer__social-icon{
   margin-right: 10px;
 }
 
 .footer__link{
   text-decoration: none;
+  color: white;
 }
